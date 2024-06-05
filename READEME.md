@@ -37,3 +37,20 @@
 => Root Router
 
 => Final
+
+# 유튜브 플랫폼 만들어서 서버 관리
+
+/ => Home
+/join => Join
+/login => Login
+/search => Search
+
+/user:id => see user
+/user/logout => log out
+/user/edit => Edit user Profile
+/user/delete => Delete user profile
+
+/video/:id => see video
+/video/:id/edit => Edit video
+/video/:id/delete => Delete video
+/video/upload => Upload video

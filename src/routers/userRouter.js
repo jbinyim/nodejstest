@@ -1,16 +1,11 @@
 import express from "express";
+import { edit, deleted, logout, see } from "../controlas/userControla";
 
 const userRouter = express.Router();
 
-const handleEditUser = (req, res, next) => {
-  return res.send("Edit User");
-};
-
-const handleDelete = (req, res, next) => {
-  return res.send("Delte User");
-};
-
-userRouter.get("/edit", handleEditUser);
-userRouter.get("/delete", handleDelete);
+userRouter.get("/edit", edit);
+userRouter.get("/delete", deleted);
+userRouter.get("/logout", logout);
+userRouter.get("/:id", see);
 
 export default userRouter;
