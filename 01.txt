@@ -133,3 +133,15 @@ view engine의 실제 속성을 세팅 => set(views, 경로 설정)
 2) scss에서 변수 => include
 3) patials => 공통적으로 사용될 html 저장 => 필요시 불러옴
 4) 상속
+5) mixin 
+
+*pug를 활용 > 조건에 따른 UI구현
+*pug를 활용 > 반복문
+
+method: get / post
+
+get: 서버에 어떤 데이터를 요청
+post: 서버에 어떤 데이터를 전달 / db에 있는 값을 바꾸고자 할 때
+
+
+
