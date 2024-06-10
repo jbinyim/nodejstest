@@ -144,4 +144,44 @@ get: 서버에 어떤 데이터를 요청
 post: 서버에 어떤 데이터를 전달 / db에 있는 값을 바꾸고자 할 때
 
 
+--------------------------------------------------------------------------------------
+*Node.js
 
+1) Server를 구현 목적
+
+2) Clinet 존재 이해
+
+3) User <-> Clinet(*웹 브라우저) <-> Server
+
+4) Server는 어떻게 생성?
+- express :  framework
+
+5) Server: Clien의 요청 들어야 한다
+- app.listen(): 어떤 포트를 통해서 client가 무엇가를 요청하는지 확인 / callback 함수를 통해서 client 요청확인 후 실행
+
+6) Page Routing: 복수의 페이지를 가지고 홈페이지 서비스를 구현 => 각각의 페이지마다 url에 client가 접속하게 되었을떄 웹 브라우저 화면 내용 출력
+
+> Global Routiing
+20~30개 url 개별적 & 독립적
+main 판단되는 동적 파라미터를 공동 + 추가 파라미터를 입력
+
+> middleware (*컨셉 개념)
+서버화 되어있는 객체에 use() 함수를 사용
+
+> controller
+middleware > 특정 경로에 접속 > 웹 브라우저 화면 출력
+
+> 각가의 개별 파일 export VS 해당 파일 export default
+
+ method: get, post
+사용자가 단순히 ㅣ특정 페이지에 접속했을떄 실행 : get
+사용자가 어떤 값을 입력해서 입력한 값으로 data를 수정하거나 업데이트를 하고자 할 떄에는 : post
+
+> get  & post 를 한번에 작성할 수 있도록 해주는 route() => get & post 
+ 
+
+node.js => npm
+window => package manager : choclatey : mongo : mongoose
+
+choco install mongodb-compass
+choco install mongo
