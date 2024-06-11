@@ -1,8 +1,11 @@
-// import exporess from "exporess"
-// const express = require("express");
+import "./db";
+import "./models/video";
+import app from "./index";
 
-// const app = express();
+const PORT = 4000;
 
-// app.use();
+const handleListening = () => {
+  console.log(`serverListening on port http://localhost:${PORT}`);
+};
 
-console.log("how are you");
+app.listen(PORT, handleListening);
